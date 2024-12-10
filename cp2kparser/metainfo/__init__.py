@@ -26,8 +26,18 @@ import nomad.datamodel.metainfo.public
 import nomad.datamodel.metainfo.general
 
 m_env = LegacyMetainfoEnvironment()
-m_env.m_add_sub_section(Environment.packages, sys.modules['cp2kparser.metainfo.cp2k'].m_package)  # type: ignore
-m_env.m_add_sub_section(Environment.packages, sys.modules['cp2kparser.metainfo.cp2k_general'].m_package)  # type: ignore
-m_env.m_add_sub_section(Environment.packages, sys.modules['nomad.datamodel.metainfo.common'].m_package)  # type: ignore
-m_env.m_add_sub_section(Environment.packages, sys.modules['nomad.datamodel.metainfo.public'].m_package)  # type: ignore
-m_env.m_add_sub_section(Environment.packages, sys.modules['nomad.datamodel.metainfo.general'].m_package)  # type: ignore
+m_env.m_add_sub_section(
+    Environment.packages, sys.modules["cp2kparser.metainfo.cp2k"].m_package
+)  # type: ignore
+m_env.m_add_sub_section(
+    Environment.packages, sys.modules["cp2kparser.metainfo.cp2k_general"].m_package
+)  # type: ignore
+m_env.m_add_sub_section(
+    Environment.packages, sys.modules["nomad.datamodel.metainfo.common"].m_package
+)  # type: ignore
+m_env.m_add_sub_section(
+    Environment.packages, sys.modules["nomad.datamodel.metainfo.public"].m_package
+)  # type: ignore
+m_env.m_add_sub_section(
+    Environment.packages, sys.modules["nomad.datamodel.metainfo.general"].m_package
+)  # type: ignore
